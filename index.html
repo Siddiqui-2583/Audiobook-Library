@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .logo{
+        display: grid;
+        grid-area: logo;
+        justify-content: center;
+      }
+      .1{
+        grid-area: Home;
+      }
+      .2{
+        grid-area: Library;
+      }
+      .3{
+        grid-area: Categories;
+      }
+      .4{
+        grid-area: Writers;
+      }
+      .5{
+        grid-area: Novel;
+      }
+      .6{
+        grid-area: NonFicton;
+      }
+      .7{
+        grid-area: login;
+      }
+
+      .menu{
+        grid-area: menu;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-flow: column;
+        grid-template-rows: auto;
+        grid-template-areas:"Home Library Categories Writers Novel NonFicton login";
+        justify-content: center;
+      }
+
+      .header{
+        background-image: linear-gradient(to right, #00FFFF,#58D68D);
+        display: grid;
+        /*justify-content: center;*/
+        grid-template-rows:80px;
+        grid-template-columns:30% 70%;
+        grid-template-areas:"logo menu";
+
+      }
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Register</title>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="image/logo.png" height="75px" width="160px" alt="logo">
+      </div>
+      <div class="menu">
+        <div class="1">
+          <a href="#" class="navLinks">Home</a>
+        </div>
+        <div class="2">
+          <a href="#" class="navLinks">Library</a>
+        </div>
+        <div class="3">
+          <a href="#" class="navLinks">Categories</a>
+        </div>
+        <div class="4">
+          <a href="#" class="navLinks">Writers</a>
+        </div>
+        <div class="5">
+          <a href="#" class="navLinks">Novel</a>
+        </div>
+        <div class="6">
+          <a href="#" class="navLinks">Non-fiction</a>
+        </div>
+        <div class="7">
+          <a href="#" class="navLinks">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
